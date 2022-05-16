@@ -6,7 +6,7 @@
         "desc": "Nvidia Zotac Gaming GeForce RTX 3060 OC Edition 45 MH/s",
         "precio": 125000,
         "precio_visible": "$125.000",
-        "img": "./public/img/3060.png",
+        "img": "../public/img/3060.png",
         "cantidad":1
     },
 
@@ -28,7 +28,7 @@
         "desc": "Nvidia Zotac Gaming GeForce RTX 3090 118 MH/s",
         "precio": 400000,
         "precio_visible": "$400.000",
-        "img": "./public/img/3090.jpg",
+        "img": "../public/img/3090.jpg",
         "cantidad":1
     },
 
@@ -39,7 +39,7 @@
         "desc": "Amd Eagle 6600XT 42 MH/S",
         "precio": 118000,
         "precio_visible": "$118.000",
-        "img": "./public/img/6600.png",
+        "img": "../public/img/6600.png",
         "cantidad":1
     },
 
