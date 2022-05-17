@@ -40,7 +40,7 @@ const productos =
         desc: "Amd Eagle 6600XT 42 MH/S",
         precio: 118000,
         precio_visible: "$118.000",
-        img: "./public/img/6600.png",
+        img: './public/img/6600.png',
         cantidad:1
     },
 
@@ -51,7 +51,7 @@ const productos =
         desc: "Amd Eagle 6900XT 115 MH/S",
         precio: 397000,
         precio_visible: "$397.000",
-        img: "./public/img/6900.jpg",
+        img: './public/img/6900.jpg',
         cantidad:1
     }
 ]
