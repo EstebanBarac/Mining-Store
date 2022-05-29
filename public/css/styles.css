@@ -197,3 +197,12 @@ select {
 .p-modal {
   margin-top: 20px;
 }
+
+#btn-vaciar {
+  margin-left: 50px;
+}
+
+#btn-vaciar:hover {
+  cursor: pointer;
+  background-color: red;
+}

@@ -37,6 +37,6 @@ export const mostrarProductos = async () => {
         confirm: 'Ok',
         timer: 3000
       })
-    });
-  });
+    })
+  })
 };

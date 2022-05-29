@@ -1,6 +1,7 @@
 import { actualizarCarrito } from "./actualizarCarrito.js";
 import { mostrarProductos } from "./App.js";
 import { eliminarProductoCarrito } from "./carritoIndex.js";
+import { vaciarCarrito } from "./carritoIndex.js";
 // import { productos } from "./stock.js";
 
 const contenedorCarrito = document.getElementById('carrito-contenedor');
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       actualizarCarrito(carritoStorage);
       console.log(producto.nombre)
       eliminarProductoCarrito(producto.id, producto.nombre)
+      vaciarCarrito()
     })
   }
 })

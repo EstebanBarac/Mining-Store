@@ -1,3 +1,6 @@
+import { vaciarCarrito } from "./carritoIndex.js";
+
+
 var modal = document.getElementById("modal-map");
 var btn = document.getElementById("btn-abrir-map");
 var span = document.getElementsByClassName("btn-cerrar-map")[0];
@@ -16,3 +19,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+btn.addEventListener("click", vaciarCarrito);

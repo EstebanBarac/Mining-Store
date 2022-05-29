@@ -2,7 +2,7 @@ import { actualizarCarrito } from "./actualizarCarrito.js";
 import { productos } from "./stock.js";
 
 const contenedorCarrito = document.getElementById('carrito-contenedor');
-let carritoDeCompras = [];
+export let carritoDeCompras = [];
 
 export const carritoIndex = (productoId) => {
   if (localStorage.getItem("carrito")) {
@@ -62,3 +62,38 @@ const renderProductosCarrito = (productoId) => {
   contenedorCarrito.appendChild(div);
   actualizarCarrito(carritoDeCompras);
 }
+
+
+function limpiar() {
+  contenedorCarrito.innerHTML = "";
+  while (contenedorCarrito.firstChild) {
+      contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+  }
+}
+
+const btnVaciar = document.getElementById("btn-vaciar");
+let contadorCarrito = document.getElementById("contador-carrito");
+export const vaciarCarrito = () => {
+if (carritoDeCompras.length > 0) {
+
+    localStorage.clear();
+    carritoDeCompras = [];
+    contadorCarrito.innerHTML = 0;
+    precioTotal.innerHTML = "";
+    limpiar();
+
+    btnVaciar.addEventListener('click', () => {
+    swal({
+      title: '',
+      text: 'Todos tus productos se han quitado',
+      icon: 'error',
+      confirmButtonText: 'OK',
+      timer: 3000
+     })     
+    })
+  }   
+};  
+
+btnVaciar.addEventListener("click", vaciarCarrito);
+
+
